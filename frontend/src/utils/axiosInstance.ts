@@ -2,7 +2,8 @@ import axios from "axios";
 import { useAuthStore } from "@/stores/auth-store";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api", // Đặt base URL cho tất cả các yêu cầu API
+  // baseURL: "http://localhost:5000/api", // Đặt base URL cho tất cả các yêu cầu API
+  baseURL: "https://soa-final-1.onrender.com/api", // Đặt base URL cho tất cả các yêu cầu API
   headers: {
     "Content-Type": "application/json",
   },
