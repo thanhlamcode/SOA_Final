@@ -24,7 +24,8 @@ builder.Services.AddCors(options =>
         policy.WithOrigins(
                 "http://localhost:5173",   // Vite mặc định
                 "http://localhost:3000",   // Nếu chạy React trên 3000
-                "http://localhost:3001"    // Nếu chạy Docker frontend dev
+                "http://localhost:3001",    // Nếu chạy Docker frontend dev
+                "https://soa-final-1.onrender.com"
             )
             .AllowAnyMethod()
             .AllowAnyHeader()
