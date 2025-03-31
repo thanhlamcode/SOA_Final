@@ -27,6 +27,7 @@ builder.Services.AddCors(options =>
                 "http://localhost:3001",    // Nếu chạy Docker frontend dev
                 "https://soa-final-1.onrender.com"
             )
+            .SetIsOriginAllowed(origin => true) // 🔥 Cần để tránh lỗi CORS khi AllowCredentials
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials();
